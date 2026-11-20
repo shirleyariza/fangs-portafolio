@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fangs — Maggie Rodríguez · Portafolio</title>
+  <meta name="description" content="Portafolio de Maggie Rodríguez (Fangs): branding, ilustración y diseño de producto digital UX/UI.">
+  <meta name="theme-color" content="#f2f2f2">
+  <meta property="og:title" content="Fangs — Maggie Rodríguez">
+  <meta property="og:description" content="Branding, ilustración y UX/UI. Bite the ideas.">
+  <meta property="og:image" content="dientes-superior.png">
+  <link rel="icon" href="dientes-superior.png" type="image/png">
+
+  <!-- Fuentes: cámbialas por tus fuentes reales si las tienes (ver README) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Pinyon+Script&family=Italianno&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#proyectos">Saltar al contenido</a>
+
+  <!-- Filtro de textura para "Hablemos" -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <filter id="grano" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="ruido"/>
+      <feDisplacementMap in="SourceGraphic" in2="ruido" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <header class="nav">
+    <a class="nav__logo" href="#inicio" aria-label="Fangs, ir al inicio">Fangs</a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero__stage">
+        <img class="hero__dientes hero__dientes--sup" src="dientes-superior.png" alt="" width="525" height="215">
+        <div class="hero__centro">
+          <h1 class="hero__titulo">Fangs</h1>
+          <p class="hero__nombre"><span>Maggie Rodríguez</span></p>
+        </div>
+        <img class="hero__dientes hero__dientes--inf" src="dientes-inferior.png" alt="" width="509" height="180">
+      </div>
+    </section>
+
+    <div id="proyectos"></div>
+
+    <!-- 01 BRANDING -->
+    <section class="branding reveal" data-reveal="branding">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--tan">01 / BrandLab</p>
+        <h2 class="titulo titulo--branding">Branding</h2>
+        <p class="branding__rol">Rebranding | Dirección creativa</p>
+        <p class="branding__texto">Proyecto de renovación de identidad visual para Floristería Dolly, enfocado en fortalecer su esencia, conservar su legado y construir una imagen de marca más coherente y memorable. Lideré el proceso desde la dirección creativa y el desarrollo estratégico de marca.</p>
+
+        <div class="branding__grid">
+          <figure class="board">
+            <div class="board__marco">
+              <img src="dolly-brandboard.png" alt="Brandboard de Floristería Dolly con logotipo, paleta, tipografías y aplicaciones" loading="lazy">
+            </div>
+            <figcaption><span>Brandboard</span><span>Edición 2026</span></figcaption>
+          </figure>
+
+          <div class="collage">
+            <img class="collage__ident"   src="dolly-identificadores.png" alt="Identificadores de Dolly: monograma y logotipo" loading="lazy">
+            <img class="collage__patron"  src="dolly-patron.png" alt="Papel de empaque con el patrón de Dolly" loading="lazy">
+            <img class="collage__cert"    src="certificado-brandlab.png" alt="Certificado de participación en el proyecto BrandLab 2026" loading="lazy">
+            <img class="collage__sticker" src="dolly-stickers.jpg" alt="Stickers ovalados con el logotipo de Dolly" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 ILUSTRACIÓN -->
+    <section class="ilustracion reveal" data-reveal="ilustracion">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--dark">02 / Album cover</p>
+        <h2 class="titulo titulo--ilustracion">Ilustración</h2>
+        <p class="ilustracion__texto">Ilustración al estilo blackwork conceptualizada en el álbum “i feel everything” de la artista Maggie Lindemann haciendo referencia a las canciones “heartdrop” y “let me burn”.</p>
+
+        <div class="ilustracion__grid">
+          <figure class="marco marco--borde">
+            <img src="ilustracion-vinilo.png" alt="Portada del álbum “i feel everything” en un disco de vinilo" loading="lazy">
+          </figure>
+          <figure class="marco">
+            <img src="ilustracion-celular.png" alt="Portada del álbum en la pantalla de un reproductor de música en un celular" loading="lazy">
+          </figure>
+          <figure class="marco">
+            <img src="ilustracion-cuadro.png" alt="Portada del álbum enmarcada en la pared" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 UX / UI -->
+    <section class="ux">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--verde">03 / Diseño de producto digital</p>
+        <h2 class="titulo titulo--ux"><span class="ux__a">UX</span> <span class="ux__barra">/</span> <span class="ux__b">UI</span></h2>
+        <p class="ux__texto">GOAL es una app de hábitos que tiene como lema mantener la racha de la meta a cumplir sin castigarse y valorar el proceso de fallar en el intento.</p>
+
+        <div class="ux__videos">
+          <div class="telefono">
+            <video src="goal-app-movil.mp4" poster="poster-goal-app-movil.jpg"
+                   autoplay muted loop playsinline preload="metadata"
+                   aria-label="Recorrido en video de los flujos de la app GOAL en celular"></video>
+          </div>
+          <div class="pantalla">
+            <video src="goal-web.mp4" poster="poster-goal-web.jpg"
+                   autoplay muted loop playsinline preload="metadata"
+                   aria-label="Recorrido en video de la página web de GOAL"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <img class="ornamento ornamento--izq" src="ornamento-izquierdo.jpg" alt="" loading="lazy">
+      <img class="ornamento ornamento--der" src="ornamento-derecho.jpg" alt="" loading="lazy">
+
+      <div class="contacto__centro">
+        <p class="contacto__lema">Bite the ideas</p>
+        <h2 class="contacto__titulo" data-reveal="hablemos">Hablemos</h2>
+        <p class="contacto__frase">Que tu próxima idea deje marca</p>
+        <a class="contacto__correo" href="mailto:fangsstudio7@gmail.com">fangsstudio7@gmail.com</a>
+
+        <a class="insta" href="https://www.instagram.com/fangsight" target="_blank" rel="noopener noreferrer" aria-label="Instagram @fangsight">
+          <img src="dientes-superior.png" alt="" width="525" height="215">
+          <span class="insta__handle"><i>/</i>@fangsight<i>/</i></span>
+          <img src="dientes-inferior.png" alt="" width="509" height="180">
+        </a>
+      </div>
+
+      <footer class="pie">
+        <p>© 2026 Fangs — Todos los derechos reservados</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
